@@ -6,6 +6,11 @@ Open index.html to view. Upload the whole folder to any web host (Yale Sites, Go
 3. Events, break-trip details, Zelle and the calendar live in the Google Sheet tabs (Events, Trips, Settings).
 4. The hidden page is founders.html, linked only by the small tree on the History page.
 
-DESIGN AND CHECKS
-The homepage uses original SVG outdoor line sketches, a board-letter placeholder, and photo slots home-1, home-2, home-3 and home-board. Replace the welcome-letter placeholder in index.html when the board has a message.
-From the repository root, run `node --test tests/site.test.cjs` for the form and interaction regression checks. For a local preview, run `python3 -m http.server 8000 --directory site` and open http://localhost:8000.
+TRAIL DESIGN AND CHECKS
+The trail branch homepage is an illustrated walk: trailhead, clearing and live calendar, signpost junction, expedition lookout, clickable site map, and campfire. The signpost and map link to the existing pages and forms. Each inner page links back to the junction.
+
+trail.css contains the scoped trail design plus shared Lora / DM Sans font tokens. trail.js draws the winding route, updates the current-stop guide, and marks visited side pages using sessionStorage. It uses normal browser scrolling. Parallax and campfire animation respect prefers-reduced-motion. The layout and navigation remain usable without JavaScript; the calendar shows its normal client-rendered content when JavaScript is enabled.
+
+The landscape and forest are original vector artwork in img/trail-landscape.svg, img/trail-forest.svg and img/trail-margins.svg. Club photographs are documented in photos/README.md. Editable homepage photo slots are home-1, home-2 and home-3.
+
+Run `node --test tests/*.test.cjs` from the repository root. For a local preview, run `python3 -m http.server 8000 --directory site` and open http://localhost:8000.
