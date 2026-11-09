@@ -7,5 +7,5 @@ Open index.html to view. Upload the whole folder to any web host (Yale Sites, Go
 4. The hidden page is founders.html, linked only by the small tree on the History page.
 
 DESIGN AND CHECKS
-The homepage uses original SVG outdoor line sketches, a board-letter placeholder, and photo slots home-1, home-2, home-3 and home-board. Replace the welcome-letter placeholder in index.html when the board has a message.
+Design 2 builds on design-granola with Lora headings, DM Sans body type, original outdoor sketches, and club photographs from the public Yale Connect site (sources in photos/README.md). The homepage photo slots home-1, home-2, home-3 and home-board have local fallbacks and can still be replaced through board editing. The board-letter placeholder remains in index.html. Copy follows design-granola; headings use Lora and all body copy, navigation, labels, captions and form controls use DM Sans.
 From the repository root, run `node --test tests/site.test.cjs` for the form and interaction regression checks. For a local preview, run `python3 -m http.server 8000 --directory site` and open http://localhost:8000.

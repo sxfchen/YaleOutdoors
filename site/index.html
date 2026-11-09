@@ -7,13 +7,14 @@
 <meta name="description" content="Yale Outdoors, the outing club at Yale: trips, gear rentals and outdoor skills.">
 <link rel="icon" href="img/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=IM+Fell+English:ital@0;1&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body class="home">
 <a class="skip" href="#main">Skip to content</a>
 <header class="top"><div class="wrap">
 <div class="strap"><span>New Haven, Connecticut</span><span>Outdoors at Yale since 1936</span></div>
+<a class="mast" href="index.html" aria-label="Yale Outdoors home"><img src="img/logo-black.png" alt="Yale Outdoors" width="1500" height="803"></a>
 <button type="button" class="menu" id="menuBtn" aria-expanded="false" aria-controls="nav">Menu <span aria-hidden="true">+</span></button>
 <nav class="nav" id="nav" aria-label="Main"><a href="index.html" aria-current="page">Home</a><a href="trips.html">Trips</a><a href="gear.html">Gear</a><a href="join.html">Join</a><a href="people.html">People</a><a href="library.html">Library</a><a href="history.html">History</a></nav>
 </div></header>
@@ -27,8 +28,9 @@
 <a class="text-link" href="https://tinyurl.com/ycyogroupme">Join the GroupMe <span aria-hidden="true">↗</span></a>
 </div>
 </div>
-<div class="hero-art">
-<img class="landscape-sketch" src="img/logo-black.png" alt="Yale Outdoors" width="1500" height="803" fetchpriority="high">
+<div class="hero-art hero-collage">
+<figure class="hero-main-photo"><img src="photos/club-trail.jpg" alt="Three backpackers walking through autumn woods toward a cabin" width="2667" height="2000" fetchpriority="high"></figure>
+<figure class="hero-small-photo"><img src="photos/club-meadow.jpg" alt="A backpacker following a narrow trail through golden grass" width="1440" height="1800"></figure>
 <a class="hero-merch" href="gear.html#merch">Merch <span aria-hidden="true">↗</span></a>
 </div>
 </section>
@@ -94,14 +96,14 @@
 <section class="field-section" aria-labelledby="fieldTitle">
 <div class="section-head"><h2 id="fieldTitle">From the field</h2><div class="field-controls"><button class="arrow-btn" type="button" data-field-prev aria-label="Previous photographs" aria-controls="fieldPhotos">←</button><button class="arrow-btn" type="button" data-field-next aria-label="Next photographs" aria-controls="fieldPhotos">→</button></div></div>
 <div class="field-photos" id="fieldPhotos" role="region" aria-label="Trip photographs" tabindex="0">
-<figure class="slot" data-slot="home-1" data-alt="Yale Outdoors members on a trail" data-cap="Weekend trips"><div class="mat"><div class="empty"><img src="img/tree-black.png" alt=""><span>Photo to come</span></div></div><figcaption></figcaption><div class="tools"></div></figure>
-<figure class="slot tall" data-slot="home-2" data-alt="Yale Outdoors members at camp" data-cap="Break expeditions"><div class="mat"><div class="empty"><img src="img/tree-black.png" alt=""><span>Photo to come</span></div></div><figcaption></figcaption><div class="tools"></div></figure>
-<figure class="slot" data-slot="home-3" data-alt="Yale Outdoors members on the water" data-cap="Traditions"><div class="mat"><div class="empty"><img src="img/tree-black.png" alt=""><span>Photo to come</span></div></div><figcaption></figcaption><div class="tools"></div></figure>
+<figure class="slot has" data-slot="home-1" data-alt="Three backpackers approaching a cabin in autumn woods" data-cap="Weekend trips"><div class="mat"><img class="pic" src="photos/club-trail.jpg" alt="Three backpackers approaching a cabin in autumn woods" loading="lazy"></div><figcaption>Weekend trips</figcaption><div class="tools"></div></figure>
+<figure class="slot has tall" data-slot="home-2" data-alt="A backpacker on a trail through sunlit golden grass" data-cap="Break expeditions"><div class="mat"><img class="pic" src="photos/club-meadow.jpg" alt="A backpacker on a trail through sunlit golden grass" loading="lazy"></div><figcaption>Break expeditions</figcaption><div class="tools"></div></figure>
+<figure class="slot has" data-slot="home-3" data-alt="Yale Outdoors members silhouetted together at sunset" data-cap="Traditions"><div class="mat"><img class="pic" src="photos/club-sunset.jpg" alt="Yale Outdoors members silhouetted together at sunset" loading="lazy"></div><figcaption>Traditions</figcaption><div class="tools"></div></figure>
 </div>
 </section>
 
 <section class="board-letter" aria-labelledby="boardTitle">
-<figure class="slot board-photo" data-slot="home-board" data-alt="The Yale Outdoors board" data-cap="The board"><div class="mat"><div class="empty"><img src="img/tree-black.png" alt=""><span>Photo to come</span></div></div><figcaption></figcaption><div class="tools"></div></figure>
+<figure class="slot has board-photo" data-slot="home-board" data-alt="Club members enjoying a sunset together" data-cap=""><div class="mat"><img class="pic" src="photos/club-sunset.jpg" alt="Club members enjoying a sunset together" loading="lazy"></div><figcaption></figcaption><div class="tools"></div></figure>
 <div class="letter-sheet"><p class="eyebrow">Yale Outdoors</p><h2 id="boardTitle">A message from the board</h2><p class="letter-placeholder">Welcome letter to come.</p><div class="letter-signoff"><img src="img/tree-black.png" alt="" width="50" height="50"><a href="people.html">The board <span aria-hidden="true">↗</span></a></div></div>
 </section>
 
@@ -114,7 +116,7 @@
 </main>
 <footer class="foot"><div class="wrap">
 <div class="grid">
-<div><h4>Yale Outdoors</h4>
+<div><a class="footer-brand" href="index.html" aria-label="Yale Outdoors home"><img src="img/logo-white.png" alt="Yale Outdoors" width="1500" height="803" loading="lazy"></a>
 <p>The outing club for everyone at Yale. Run by students.</p>
 <p><a href="mailto:yaleoutdoors@gmail.com">yaleoutdoors@gmail.com</a></p>
 <p><button type="button" class="lnk small" id="copyClub">Copy email</button></p></div>
