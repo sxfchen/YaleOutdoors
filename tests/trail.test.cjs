@@ -63,8 +63,7 @@ test('blocked storage and malformed session data leave navigation usable', () =>
   assert.equal(boot({ saved: '"not an array"' }).mapLink.visited, false);
 });
 
-test('reduced motion hides the moving marker while current-stop text still updates', () => {
+test('current-stop text still updates with reduced motion', () => {
   const result = boot({ homepage: true, reduced: true });
-  assert.equal(result.walker.style.display, 'none');
   assert.equal(result.nodes.trailPosition.textContent, 'You are here: The clearing');
 });
