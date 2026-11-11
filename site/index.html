@@ -4,28 +4,28 @@
 <title>Yale Outdoors · Take the trail</title><meta name="description" content="Take a walk through Yale Outdoors: trips, gear, and good-spirited community. No experience needed.">
 <link rel="icon" href="img/favicon.png"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="trail.css">
+<script src="trail-scene.js"></script>
 </head><body class="hike-home">
 <a class="skip" href="#main">Skip to content</a>
 <header class="hike-header"><a class="hike-brand" href="#trailhead"><img src="img/tree-black.png" alt="" width="32" height="38"><span>Yale Outdoors</span></a><nav aria-label="Trail shortcuts"><a href="#junction">The signpost <span aria-hidden="true">↗</span></a><a class="map-shortcut" href="join.html">Join us <span aria-hidden="true">↗</span></a></nav></header>
 <main id="main">
 <section class="trailhead" id="trailhead" data-trail-stop="Trailhead" aria-labelledby="homeTitle">
 <div class="trail-landscape" aria-hidden="true"></div>
-<div class="trailhead-copy"><p class="trail-kicker">New Haven, Connecticut <span>·</span> Since 1936</p><img class="hike-logo" src="img/logo-black.png" alt="Yale Outdoors" width="1500" height="803" fetchpriority="high"><h1 id="homeTitle">Join us and <em>get outside!</em></h1><p>Offering trips, events, and good-spirited community<br>since who knows when.</p><a class="start-walk" href="#clearing">Take the trail <span aria-hidden="true">↓</span></a></div>
-<div class="trailhead-note" aria-hidden="true"><span class="blaze"></span> Follow the blazes.<br>There’s no wrong pace.</div>
+<div class="trailhead-copy"><img class="hike-logo" src="img/logo-black.png" alt="Yale Outdoors" width="1500" height="803" fetchpriority="high"><h1 id="homeTitle">Join us and <em>get outside!</em></h1><p>Offering trips, events, and good-spirited community<br>since who knows when.</p></div>
 </section>
 <div class="trail-walk" id="trailWalk">
 <section class="hike-stop clearing" id="clearing" data-trail-stop="The clearing" aria-labelledby="clearingTitle">
 <div class="hike-container">
 <div class="clearing-grid"><div class="hike-copy"><h2 id="clearingTitle">A little about<br>Yale Outdoors.</h2><p class="large-copy">The outing club for everyone at Yale. Run by students.</p><p>Yale Outdoors is the university’s outing club. We lead day trips from New Haven and bigger trips over October, Winter and Spring Break, rent camping gear for a few dollars a day, and teach one another outdoor skills.</p><p>You do not need experience. Most people who come the first time have never done it.</p><div class="row"><a class="btn solid" href="https://forms.gle/SaASJQefPbpXcXjK9">Get the newsletter ↗</a><a class="text-link" href="https://tinyurl.com/ycyogroupme">Join the GroupMe ↗</a></div></div>
 <figure class="trail-photo clearing-photo"><div class="photo-pin" aria-hidden="true"></div><img src="photos/club-trail.jpg" alt="Backpackers arriving at a cabin in autumn woods" width="2667" height="2000" loading="lazy"><figcaption>No experience needed.</figcaption></figure></div>
-<div class="trail-bulletin"><div class="bulletin-title"><p class="trail-kicker">Pinned to the trail board</p><h3>Coming up</h3><p>Day trips most weeks, three break expeditions a year, and room for your idea.</p><a class="text-link" href="trips.html#suggest">Suggest a trip ↗</a></div><aside class="calbox" id="homeCal" aria-label="Club calendar">
+<div class="trail-bulletin"><div class="bulletin-title"><h3>Coming up</h3><p>Day trips most weeks, three break expeditions a year, and room for your idea.</p><a class="text-link" href="trips.html#suggest">Suggest a trip ↗</a></div><aside class="calbox" id="homeCal" aria-label="Club calendar">
 <div class="agwrap"><ul class="board-list agenda" id="notice" aria-live="polite"></ul></div>
 <div class="calstrip"><a href="https://calendar.google.com/calendar/embed?src=c_45a252457e91d6752c809c38ce0ceed0f1c3f7290dda2dc1db5af48b756c6b14%40group.calendar.google.com">Open calendar ↗</a><a href="https://calendar.google.com/calendar/render?cid=c_45a252457e91d6752c809c38ce0ceed0f1c3f7290dda2dc1db5af48b756c6b14%40group.calendar.google.com">Add to mine +</a></div>
 </aside></div>
-</div><img class="edge-sketch pack-sketch" src="img/sketch-pack.svg" alt="" width="300" height="330" loading="lazy">
+</div>
 </section>
 <section class="hike-stop junction" id="junction" data-trail-stop="The junction" aria-labelledby="junctionTitle">
-<div class="hike-container junction-grid"><div class="hike-copy"><h2 id="junctionTitle">Where to start</h2><p>Weekend outings, the three break expeditions, and how to suggest your own.</p><p>See what is free on your dates and put in a rental request.</p><p>From the mailing list to Pnuckle to Leader to the Board.</p><img class="junction-hikers" src="img/sketch-hikers.svg" alt="" width="540" height="420" loading="lazy"></div>
+<div class="hike-container junction-grid"><div class="hike-copy"><h2 id="junctionTitle">Where to start</h2><p>Weekend outings, the three break expeditions, and how to suggest your own.</p><p>See what is free on your dates and put in a rental request.</p><p>From the mailing list to Pnuckle to Leader to the Board.</p></div>
 <nav class="wood-signpost" aria-label="Explore Yale Outdoors"><div class="signpost-pole" aria-hidden="true"></div>
 <a class="wood-sign points-right" href="trips.html"><span>Trips</span><small>Weekend outings &amp; expeditions</small><b aria-hidden="true">↗</b></a>
 <a class="wood-sign points-left" href="gear.html"><span>Gear</span><small>Rentals &amp; merch</small><b aria-hidden="true">↖</b></a>
@@ -72,6 +72,5 @@
 <div class="mini"><span>Yale Outdoors &middot; a student organization at Yale University</span><span><a href="#" id="gateBtn">Board login</a> </span></div>
 </div></footer>
 
-<div class="trail-position" aria-hidden="true"><span class="blaze"></span><span id="trailPosition">You are here: Trailhead</span></div>
 <script src="content.js"></script><script src="site.js"></script><script src="trail.js"></script>
 </body></html>

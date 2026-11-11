@@ -2,14 +2,14 @@
 :root{--display:"Lora",Georgia,serif;--body:"DM Sans",system-ui,-apple-system,"Segoe UI",sans-serif;--label:var(--body);--paper:#eee9d8;--sheet:#faf6e9;--ink:#2b4939;--muted:#66725e;--pine:#35573f;--rust:#a14f31;--soft:#c9ceba;--sage:#dce1c7}
 button,input,select,textarea{font-family:var(--body)}
 .trail-return{font-weight:600;letter-spacing:0;text-transform:none}
-.hike-home{background:#e8e5d0;overflow-x:clip}
+.hike-home{background:#dfe4c5;overflow-x:clip}
 .hike-home::before{opacity:.025;z-index:10}
 .hike-home main{padding:0}
 .hike-home section{margin:0;scroll-margin-top:82px}
 .hike-home h1,.hike-home h2,.hike-home h3{font-weight:500;text-wrap:balance}
-.hike-home h2{border:0;padding:0;font-size:clamp(2.8rem,5vw,4.2rem);line-height:1.14;letter-spacing:-.045em;margin:0 0 26px}
-.hike-home h3{font-size:2rem}
-.hike-home p{font-size:1rem;line-height:1.8}
+.hike-home h2{border:0;padding:0;font-size:clamp(3rem,5.4vw,4.5rem);line-height:1.14;letter-spacing:-.045em;margin:0 0 26px}
+.hike-home h3{font-size:2.16rem}
+.hike-home p{font-size:1.08rem;line-height:1.8}
 .hike-home a{transition:color .18s,background .18s,transform .2s}
 .hike-home :focus-visible{outline:3px solid #bd693d;outline-offset:5px}
 .hike-home .btn{font:600 .85rem/1.4 var(--body);letter-spacing:0;text-transform:none;border-radius:3px;padding:14px 20px}
@@ -21,37 +21,32 @@ button,input,select,textarea{font-family:var(--body)}
 .hike-brand{display:flex;align-items:center;gap:12px;color:inherit;text-decoration:none;font:500 1.18rem var(--display)}
 .hike-brand img{height:32px;width:28px;object-fit:contain;mix-blend-mode:multiply}
 .hike-header nav{display:flex;gap:30px;align-items:center}
-.hike-header nav a{color:inherit;text-decoration:none;font-size:.82rem;font-weight:500;padding:10px 0}
+.hike-header nav a{color:inherit;text-decoration:none;font-size:0.886rem;font-weight:500;padding:10px 0}
 .hike-header nav .map-shortcut{border:1px solid #61745b80;border-radius:3px;padding:10px 17px}
 .hike-header nav a:hover{color:#a14f31}
 .hike-header nav a span{margin-left:10px}
-.trailhead{position:relative;min-height:900px;height:min(1050px,115svh);background:#dce4d7;isolation:isolate;overflow:hidden}
-.trail-landscape{position:absolute;inset:0;z-index:-1;background:url('img/trail-landscape.svg') center bottom/cover no-repeat;transform:translateY(var(--landscape-drift,0px)) scale(1.025);transform-origin:center bottom}
-.trailhead-copy{position:relative;padding:145px 24px 0;text-align:center;max-width:760px;margin:auto}
-.trailhead-copy .trail-kicker{font-size:.64rem;letter-spacing:.16em}
+.trailhead{position:relative;min-height:650px;height:min(700px,88svh);background:#dce4d7;isolation:isolate;overflow:hidden}
+.trail-landscape{position:absolute;inset:0;z-index:-1;background:var(--trail-scene,url('img/trail-landscape.svg')) center bottom/cover no-repeat;transform:translateY(var(--landscape-drift,0px)) scale(1.025);transform-origin:center bottom}
+.trailhead-copy{position:relative;padding:110px 24px 0;text-align:center;max-width:760px;margin:auto}
+.trailhead-copy .trail-kicker{font-size:0.691rem;letter-spacing:.16em}
 .trailhead-copy .trail-kicker span{padding:0 12px}
-.hike-logo{display:block;width:min(370px,64vw);height:auto;margin:24px auto 12px;mix-blend-mode:multiply}
-.hike-home .trailhead h1{font-size:clamp(2.15rem,3.6vw,3.35rem);line-height:1.2;letter-spacing:-.045em;margin:0 0 15px}
+.hike-logo{display:block;width:min(800px,94vw);height:auto;margin:24px auto 12px;mix-blend-mode:multiply}
+.hike-home .trailhead h1{font-size:clamp(2.3rem,3.9vw,3.6rem);line-height:1.2;letter-spacing:-.045em;margin:0 0 15px}
 .trailhead h1 em{font-weight:400}
-.hike-home .trailhead-copy>p:not(.trail-kicker){font-size:.91rem;line-height:1.7;margin:0 auto 24px;max-width:42ch;color:#3d5747}
-.start-walk{display:inline-flex;gap:22px;align-items:center;background:#2e4d3b;color:#faf6e9;padding:13px 23px;border:1px solid #2e4d3b;border-radius:3px;text-decoration:none;font-size:.85rem;font-weight:500;box-shadow:0 4px 0 #1f3b2b33}
-.start-walk:hover{background:#486448;color:#fff;transform:translateY(-2px)}
-.start-walk span{font-size:1.3rem}
-.trailhead-map{position:absolute;bottom:52px;left:5%;font-size:.72rem;color:#f5edcf;text-decoration:none;line-height:1.7;transform:rotate(-3deg)}
-.trailhead-map>span{display:block;font-size:2.5rem;line-height:1;margin-bottom:8px}
+.hike-home .trailhead-copy>p:not(.trail-kicker){font-size:0.983rem;line-height:1.7;margin:0 auto 24px;max-width:42ch;color:#3d5747}
+.trailhead-map{position:absolute;bottom:52px;left:5%;font-size:0.778rem;color:#f5edcf;text-decoration:none;line-height:1.7;transform:rotate(-3deg)}
+.trailhead-map>span{display:block;font-size:2.7rem;line-height:1;margin-bottom:8px}
 .trailhead-map b{font-weight:600}
 .trailhead-map:hover{color:#f4c87b}
 .trailhead-note{position:absolute;bottom:56px;right:8%;font:400 .7rem/1.7 var(--body);color:#edf1d5;text-align:center;transform:rotate(4deg)}
 .blaze{display:inline-block;width:8px;height:21px;background:#dda35c;border:1px solid #986f3f}
 .trailhead-note .blaze{display:block;margin:0 auto 13px}
-.trail-position{position:fixed;left:22px;bottom:20px;z-index:18;display:flex;gap:11px;align-items:center;padding:10px 14px;background:#faf6e9ed;border:1px solid #63755b40;border-radius:3px;font-size:.65rem;color:#36533b;box-shadow:0 2px 12px #283b2410;pointer-events:none}
-.trail-position .blaze{width:5px;height:14px}
-.trail-walk{position:relative;isolation:isolate;background:linear-gradient(#e7e3c9 0%,#dfe4c5 30%,#eae3c9 61%,#d5d9bc 80%,#2e493b 94%)}
+.trail-walk{position:relative;isolation:isolate;background:#dfe4c5}
 .trail-walk::before{content:"";position:absolute;inset:0;background:url("img/trail-margins.svg") center top/100% auto repeat-y;opacity:.35;pointer-events:none;z-index:0}
 .hike-stop{position:relative;padding:75px 0 85px;overflow:clip}
 .hike-container{position:relative;z-index:2;width:min(1050px,calc(100% - 100px));margin:auto}
 .stop-heading{display:flex;align-items:center;gap:14px;margin:0 0 28px}
-.mile-marker{display:grid;place-items:center;flex:none;width:35px;height:43px;border:1px solid #7d8867;border-radius:14px 14px 2px 2px;font-size:.68rem;font-weight:600;background:#f0eddc}
+.mile-marker{display:grid;place-items:center;flex:none;width:35px;height:43px;border:1px solid #7d8867;border-radius:14px 14px 2px 2px;font-size:0.734rem;font-weight:600;background:#f0eddc}
 .hike-copy{max-width:460px}
 .hike-copy>p{color:#53644f;max-width:43ch}
 .hike-copy .row{margin-top:26px;gap:12px 24px}
@@ -60,27 +55,27 @@ button,input,select,textarea{font-family:var(--body)}
 .hike-home .large-copy{font:400 1.45rem/1.5 var(--display);color:#354f3c}
 .trail-photo{padding:10px;background:#f8f3e4;box-shadow:3px 7px 0 #6874551c;margin:0;position:relative;transform:rotate(3deg)}
 .trail-photo>img{display:block;width:100%;height:auto;aspect-ratio:1.12;object-fit:cover;border-radius:1px}
-.trail-photo figcaption{font-size:.73rem;padding:13px 6px 3px;color:#53604a}
+.trail-photo figcaption{font-size:0.788rem;padding:13px 6px 3px;color:#53604a}
 .clearing-photo{margin-top:15px;transform:rotate(4deg)}
 .photo-pin{position:absolute;left:47%;top:-9px;width:34px;height:16px;background:#b17b45b8;transform:rotate(-9deg)}
 .edge-sketch{position:absolute;opacity:.13;pointer-events:none}
 .pack-sketch{width:190px;height:auto;left:-80px;bottom:90px;transform:rotate(-15deg)}
-.trail-bulletin{display:grid;grid-template-columns:.8fr 1.2fr;gap:46px;max-width:880px;margin:95px 0 0 auto;padding:36px;background:#f7f0dc;border:7px solid #65754b;border-radius:3px;box-shadow:5px 6px 0 #435d3820;transform:rotate(-1deg)}
-.bulletin-title .trail-kicker{font-size:.57rem;color:#6a7257;margin-bottom:15px}
-.bulletin-title h3{margin:0 0 14px}
-.hike-home .bulletin-title>p:not(.trail-kicker){font-size:.85rem;line-height:1.7}
+.trail-bulletin{display:grid;grid-template-columns:.8fr 1.2fr;gap:46px;max-width:960px;margin:85px auto 0;padding:40px;background:#f7f0dc;border:7px solid #65754b;border-radius:3px;box-shadow:5px 6px 0 #435d3820;transform:rotate(-1deg)}
+.bulletin-title .trail-kicker{font-size:0.616rem;color:#6a7257;margin-bottom:15px}
+.bulletin-title h3{margin:0 0 16px;font-size:2.4rem}
+.hike-home .bulletin-title>p:not(.trail-kicker){font-size:0.918rem;line-height:1.7}
 .trail-bulletin .calbox{min-height:220px}
 .trail-bulletin .agwrap{position:relative;flex:1}
 .trail-bulletin .agenda{position:static;max-height:275px;padding:0;overflow:auto}
 .trail-bulletin .board-list li{grid-template-columns:57px 1fr;gap:12px;padding:13px 0;border-color:#a7ae90}
-.trail-bulletin .board-list b{font-size:.92rem;font-weight:500;line-height:1.5}
-.trail-bulletin .board-list .d{font-size:.63rem;color:#855a32}
-.trail-bulletin .board-list .t{font-size:.75rem;line-height:1.5;overflow-wrap:anywhere}
-.trail-bulletin .calstrip{font-size:.6rem;letter-spacing:.01em;padding:15px 0 0;margin-top:10px;justify-content:space-between;border-color:#c1c5a5}
-.junction{padding:80px 0 90px;background:linear-gradient(#ced7ae33,#c1cca04d,transparent)}
-.junction-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:110px;align-items:start}
-.junction .hike-copy{padding-top:75px}
-.junction .hike-copy>p{font-size:.95rem}
+.trail-bulletin .board-list b{font-size:0.994rem;font-weight:500;line-height:1.5}
+.trail-bulletin .board-list .d{font-size:0.68rem;color:#855a32}
+.trail-bulletin .board-list .t{font-size:0.81rem;line-height:1.5;overflow-wrap:anywhere}
+.trail-bulletin .calstrip{font-size:0.648rem;letter-spacing:.01em;padding:15px 0 0;margin-top:10px;justify-content:space-between;border-color:#c1c5a5}
+.junction{padding:80px 0 90px;background:transparent}
+.junction-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:110px;align-items:center}
+.junction .hike-copy{padding-top:0}
+.junction .hike-copy>p{font-size:1.026rem}
 .junction-hikers{display:block;width:280px;height:auto;margin:45px 0 0 -28px;mix-blend-mode:multiply}
 .wood-signpost{position:relative;display:flex;flex-direction:column;gap:12px;padding:22px 0 90px;filter:drop-shadow(5px 9px 0 #36502e18)}
 .signpost-pole{position:absolute;left:49%;top:-12px;bottom:0;width:30px;transform:rotate(1deg);background:repeating-linear-gradient(90deg,#806442 0px,#806442 6px,#745b3e 7px,#92734b 10px);border-radius:5px 6px 0 0}
@@ -90,8 +85,8 @@ button,input,select,textarea{font-family:var(--body)}
 .wood-sign::before{content:"";position:absolute;inset:0;z-index:-1;opacity:.22;background:repeating-linear-gradient(1deg,transparent 0px,transparent 16px,#d1bd8a 17px,transparent 18px,transparent 23px)}
 .wood-sign::after{content:"";position:absolute;left:50%;top:11px;width:5px;height:5px;border-radius:50%;background:#d6c4a0;box-shadow:0 76px #d6c4a0}
 .wood-sign>span{font:500 1.8rem/1.2 var(--display);display:block}
-.wood-sign small{font-size:.67rem;display:block;letter-spacing:.01em;margin-top:6px;opacity:.8}
-.wood-sign>b{position:absolute;right:25px;top:28px;font-size:1.7rem;font-weight:400}
+.wood-sign small{font-size:0.724rem;display:block;letter-spacing:.01em;margin-top:6px;opacity:.8}
+.wood-sign>b{position:absolute;right:25px;top:28px;font-size:1.836rem;font-weight:400}
 .wood-sign.points-left>b{left:25px;right:auto}
 .wood-sign:hover{background:#a35332;color:#fff5db;transform:rotate(0) translateY(-2px)}
 .hike-home .wood-sign:focus-visible{outline:3px dashed #f7d38c;outline-offset:-9px;background:#a35332;color:#fff8e5;transform:rotate(0)}
@@ -100,16 +95,16 @@ button,input,select,textarea{font-family:var(--body)}
 .lookout{padding-top:75px;padding-bottom:75px}
 .lookout-title{display:flex;align-items:baseline;justify-content:space-between;gap:24px}
 .lookout-title h2{margin-bottom:20px}
-.lookout-title+p{color:#626d53;font-size:.95rem}
+.lookout-title+p{color:#626d53;font-size:1.026rem}
 .expedition-notebook{margin:36px 0 65px;border-block:1px solid #a0aa86;background:#f5efddcf;padding:12px 30px;box-shadow:4px 5px 0 #6a785113}
 .expedition-notebook .season-tabs{border-color:#b1b998;gap:26px;padding:0}
 .expedition-notebook .season-tabs button{font:500 .86rem/1.5 var(--body);letter-spacing:0;padding:16px 0;background:transparent;border:0;border-bottom:2px solid transparent;color:#667050}
 .expedition-notebook .season-tabs button[aria-selected="true"]{color:#9b4e30;border-bottom-color:#9b4e30}
 .expedition-notebook .season-panel{background:transparent;gap:54px;padding:25px 10px;min-height:300px}
 .expedition-notebook .season-panel>img{width:100%;height:auto;max-width:300px}
-.expedition-notebook .season-panel h3{font-size:2.25rem;margin:18px 0}
-.expedition-notebook .season-panel p{font-size:.9rem;color:#637054}
-.expedition-notebook .stamp{font-size:.58rem;transform:rotate(-2deg);border-color:#8a9572;color:#687453}
+.expedition-notebook .season-panel h3{font-size:2.43rem;margin:18px 0}
+.expedition-notebook .season-panel p{font-size:0.972rem;color:#637054}
+.expedition-notebook .stamp{font-size:0.626rem;transform:rotate(-2deg);border-color:#8a9572;color:#687453}
 .field-title{display:flex;gap:24px;justify-content:space-between;align-items:center;margin-bottom:28px}
 .hike-photos{display:grid;grid-template-columns:1fr .8fr 1fr;gap:32px;align-items:start;padding-bottom:25px}
 .hike-photos .trail-photo{transform:rotate(-3deg)}
@@ -122,35 +117,35 @@ button,input,select,textarea{font-family:var(--body)}
 .map-stop{padding-top:85px;padding-bottom:130px}
 .map-intro{display:flex;justify-content:space-between;align-items:end;gap:32px;margin-bottom:36px}
 .map-intro h2{margin:0}
-.map-intro p{font-size:.88rem;color:#5c6e51}
+.map-intro p{font-size:0.95rem;color:#5c6e51}
 .trail-map-paper{background:#f4efd8;border:1px solid #b4b995;padding:24px;box-shadow:8px 9px 0 #3e563522;transform:rotate(-1deg)}
-.map-paper-top{display:flex;justify-content:space-between;border-bottom:1px solid #9fa986;padding:0 0 18px;text-transform:uppercase;letter-spacing:.09em;font-size:.63rem}
+.map-paper-top{display:flex;justify-content:space-between;border-bottom:1px solid #9fa986;padding:0 0 18px;text-transform:uppercase;letter-spacing:.09em;font-size:0.68rem}
 .illustrated-map{position:relative;aspect-ratio:1000/620;margin-top:10px}
 .illustrated-map>svg{position:absolute;inset:0;width:100%;height:100%}
 .map-point{position:absolute;left:var(--x);top:var(--y);transform:translate(-50%,-18px);text-align:center;min-width:100px;display:flex;flex-direction:column;align-items:center;text-decoration:none;line-height:1.4;color:#324b35;padding:0 8px 8px}
-.map-dot{display:grid;place-items:center;flex:none;width:35px;height:35px;border:1px solid #6c8057;border-radius:50%;background:#f4efd8;font-size:.63rem;box-shadow:0 0 0 6px #f4efd8}
+.map-dot{display:grid;place-items:center;flex:none;width:35px;height:35px;border:1px solid #6c8057;border-radius:50%;background:#f4efd8;font-size:0.68rem;box-shadow:0 0 0 6px #f4efd8}
 .map-point strong{font:500 1.14rem/1.3 var(--display);margin-top:11px;background:#f4efd8dd;padding:1px 6px}
-.map-point small{font-size:.58rem;background:#f4efd8dd;padding:2px 5px;color:#70785b}
+.map-point small{font-size:0.626rem;background:#f4efd8dd;padding:2px 5px;color:#70785b}
 .map-point:hover{color:#a14f31;transform:translate(-50%,-23px)}
 .map-point:hover .map-dot{background:#a14f31;color:#fff5dc;border-color:#a14f31}
 .map-point.is-visited .map-dot{background:#4a6b48;color:#fff9e4}
 .map-point.is-visited small::after{content:" · ✓ Visited";color:#4a6b48}
-.map-compass{position:absolute;right:3%;top:7%;text-align:center;color:#60714f;font-size:.7rem;line-height:1.1}
+.map-compass{position:absolute;right:3%;top:7%;text-align:center;color:#60714f;font-size:0.756rem;line-height:1.1}
 .map-compass>span{line-height:1.8}
-.map-key{display:flex;gap:18px;justify-content:space-between;flex-wrap:wrap;border-top:1px solid #b1ba97;padding-top:18px;font-size:.58rem;letter-spacing:.01em;color:#6f7857}
+.map-key{display:flex;gap:18px;justify-content:space-between;flex-wrap:wrap;border-top:1px solid #b1ba97;padding-top:18px;font-size:0.626rem;letter-spacing:.01em;color:#6f7857}
 .map-key i{display:inline-block;width:25px;border-top:2px dashed #b27d48;vertical-align:middle;margin-right:8px}
 .campfire{padding:100px 0 220px;background:linear-gradient(#365444,#233e34);color:#eee9ce;min-height:850px;isolation:isolate}
-.camp-stars{position:relative;z-index:2;display:flex;gap:8vw;justify-content:center;color:#d9c18b;font-size:1.2rem;opacity:.7;padding-bottom:60px}
+.camp-stars{position:relative;z-index:2;display:flex;gap:8vw;justify-content:center;color:#d9c18b;font-size:1.296rem;opacity:.7;padding-bottom:60px}
 .camp-stars span:nth-child(2){transform:translateY(-28px)}
 .camp-grid{display:grid;grid-template-columns:1fr 1fr;gap:75px;align-items:center}
 .campfire h2 em{font-weight:400;color:#e4b86c}
-.campfire .hike-copy>p{color:#c5cfad;font-size:.95rem}
+.campfire .hike-copy>p{color:#c5cfad;font-size:1.026rem}
 .campfire .trail-kicker{color:#d8cda4}
 .campfire .mile-marker{color:#e6dec0;background:transparent;border-color:#a5af86}
 .campfire .btn.solid{background:#e8d39f;border-color:#e8d39f;color:#2b4939}
 .campfire .btn.solid:hover{background:#fff2cf;border-color:#fff2cf}
 .campfire .text-link{color:#eae6cb}
-.back-to-trailhead{display:inline-block;margin-top:30px;color:#a9bc9d;font-size:.72rem;text-decoration:none;padding:8px 0}
+.back-to-trailhead{display:inline-block;margin-top:30px;color:#a9bc9d;font-size:0.778rem;text-decoration:none;padding:8px 0}
 .camp-illustration{position:relative;min-height:340px;align-self:center}
 .camp-illustration>img{display:block;width:100%;height:auto;filter:brightness(0) invert(1);opacity:.5;transform:translate(-25px,-10px)}
 .camp-flame{position:absolute;left:55%;bottom:18px;width:50px;height:65px;filter:drop-shadow(0 0 25px #e8a44b80)}
@@ -162,38 +157,81 @@ button,input,select,textarea{font-family:var(--body)}
 .camp-forest{position:absolute;bottom:-2px;left:0;width:100%;height:260px;object-fit:cover;object-position:bottom;z-index:-1;opacity:.8}
 .hike-home .foot{background:#213b30;color:#e8e8cd;border:0;padding-top:48px;padding-bottom:55px}
 .hike-home .foot a{color:#d9dfc0}
-.hike-home .foot h4{font-size:1.5rem}
-.hike-home .foot .grid>div:first-child h4{font-size:2rem}
-.hike-home .foot .mini{font-size:.58rem;border-color:#61785e}
+.hike-home .foot h4{font-size:1.62rem}
+.hike-home .foot .grid>div:first-child h4{font-size:2.16rem}
+.hike-home .foot .mini{font-size:0.626rem;border-color:#61785e}
 @keyframes flame{to{transform:rotate(-10deg) scale(.94,1.06)}}
-@media(min-width:1500px){.hike-container{width:1080px}.trailhead{height:1000px}.trailhead-copy{padding-top:165px}.hike-logo{width:390px}}
+@media(min-width:1500px){.hike-container{width:1080px}.trailhead{height:700px}.trailhead-copy{padding-top:120px}.hike-logo{width:830px}}
 @media(max-width:1150px){.hike-container{width:calc(100% - 90px)}.junction-grid{gap:65px}.clearing-grid{gap:50px}.hike-header{padding-inline:35px}}
 @media(max-width:820px){
- .trailhead{min-height:830px;height:100svh}.trail-landscape{background-size:auto 100%;background-position:50% bottom}.trailhead-copy{padding-top:130px}.hike-logo{width:320px}
- .trailhead-copy>p br{display:none}.trailhead-note{right:5%;font-size:.6rem}.trailhead-map{font-size:.62rem;bottom:35px}.trailhead-note{bottom:40px}
- .hike-container{width:calc(100% - 80px)}.hike-home h2{font-size:3rem}.hike-stop{padding-top:60px;padding-bottom:60px}.clearing-grid{grid-template-columns:1.1fr .9fr;gap:32px}
- .hike-home p{font-size:.93rem}.hike-home .large-copy{font-size:1.25rem}.clearing-photo{margin-top:0}.trail-bulletin{gap:28px;padding:25px;margin-top:65px}
- .junction-grid{grid-template-columns:1fr 1.1fr;gap:40px}.junction .hike-copy{padding-top:35px}.wood-sign{padding-left:20px;min-height:95px}.wood-sign>span{font-size:1.55rem}.wood-sign small{font-size:.57rem}.wood-sign.points-left{padding-left:48px}.wood-sign>b{right:17px}.wood-sign.points-left>b{left:17px}.junction-hikers{width:240px}
- .expedition-notebook{padding:8px 20px}.expedition-notebook .season-panel{gap:28px;padding:28px 0}.expedition-notebook .season-panel h3{font-size:2rem}.hike-photos{gap:20px}
- .map-intro{align-items:center}.map-intro p{font-size:.8rem}.trail-map-paper{padding:18px}.map-point strong{font-size:.95rem}.map-point small{font-size:.5rem}.map-dot{width:30px;height:30px}.map-point{min-width:70px;transform:translate(-50%,-15px)}
+ .trailhead{min-height:650px;height:82svh}.trail-landscape{background-size:auto 100%;background-position:50% bottom}.trailhead-copy{padding-top:115px}.hike-logo{width:715px}
+ .trailhead-copy>p br{display:none}.trailhead-note{right:5%;font-size:0.648rem}.trailhead-map{font-size:0.67rem;bottom:35px}.trailhead-note{bottom:40px}
+ .hike-container{width:calc(100% - 80px)}.hike-home h2{font-size:3.24rem}.hike-stop{padding-top:60px;padding-bottom:60px}.clearing-grid{grid-template-columns:1.1fr .9fr;gap:32px}
+ .hike-home p{font-size:1.004rem}.hike-home .large-copy{font-size:1.35rem}.clearing-photo{margin-top:0}.trail-bulletin{gap:28px;padding:25px;margin-top:65px}
+ .junction-grid{grid-template-columns:1fr 1.1fr;gap:40px}.junction .hike-copy{padding-top:0}.wood-sign{padding-left:20px;min-height:95px}.wood-sign>span{font-size:1.674rem}.wood-sign small{font-size:0.616rem}.wood-sign.points-left{padding-left:48px}.wood-sign>b{right:17px}.wood-sign.points-left>b{left:17px}.junction-hikers{width:240px}
+ .expedition-notebook{padding:8px 20px}.expedition-notebook .season-panel{gap:28px;padding:28px 0}.expedition-notebook .season-panel h3{font-size:2.16rem}.hike-photos{gap:20px}
+ .map-intro{align-items:center}.map-intro p{font-size:0.864rem}.trail-map-paper{padding:18px}.map-point strong{font-size:1.026rem}.map-point small{font-size:0.54rem}.map-dot{width:30px;height:30px}.map-point{min-width:70px;transform:translate(-50%,-15px)}
  .camp-grid{gap:36px}.campfire{padding-bottom:190px;min-height:750px}.camp-illustration{min-height:280px}.camp-forest{height:200px}
 }
 @media(max-width:600px){
  .trail-walk::before{display:none}
- .hike-header{padding:20px;gap:12px}.hike-brand{font-size:.95rem;gap:8px}.hike-brand img{width:22px;height:27px}.hike-header nav{gap:0}.hike-header nav>a:first-child{display:none}.hike-header nav .map-shortcut{font-size:.7rem;padding:9px 12px}.hike-header nav a span{margin-left:7px}
- .trailhead{height:900px;min-height:100svh;max-height:1050px}.trail-landscape{background-size:auto 100%;background-position:50% bottom}.trailhead-copy{padding:125px 22px 0}.trailhead-copy .trail-kicker{font-size:.48rem;letter-spacing:.11em}.trailhead-copy .trail-kicker span{padding:0 7px}.hike-logo{width:min(300px,82vw);margin:30px auto 20px}
- .hike-home .trailhead h1{font-size:2.05rem;margin-bottom:18px;max-width:12ch;margin-inline:auto}.hike-home .trailhead-copy>p:not(.trail-kicker){font-size:.84rem;max-width:32ch;line-height:1.8}.start-walk{font-size:.8rem;padding:12px 19px}.trailhead-note{right:23px;bottom:37px;font-size:.55rem;max-width:16ch}.trailhead-map{left:23px;bottom:37px;max-width:19ch;font-size:.57rem}.trailhead-map>span{font-size:2rem}
- .hike-home section{scroll-margin-top:25px}.hike-stop{padding:45px 0 50px 26px}.hike-container{width:calc(100% - 50px)}.hike-home h2{font-size:2.5rem;line-height:1.16;margin-bottom:23px}.stop-heading{gap:12px;margin-bottom:24px}.mile-marker{width:30px;height:37px;font-size:.6rem}.hike-home .trail-kicker{font-size:.57rem}.hike-home p{font-size:.9rem;line-height:1.8}
- .clearing-grid{grid-template-columns:1fr;gap:28px}.hike-copy{max-width:none}.hike-copy .row{gap:12px 20px}.hike-home .btn{font-size:.78rem;padding:13px 16px}.hike-home .text-link{font-size:.77rem}.clearing-photo{width:88%;margin:14px auto 0}.trail-photo>img{aspect-ratio:1.2}.trail-photo figcaption{font-size:.66rem}
- .trail-bulletin{grid-template-columns:1fr;gap:22px;padding:22px 18px;margin-top:60px;border-width:5px;transform:rotate(-1deg)}.bulletin-title h3{font-size:1.85rem}.bulletin-title p{margin-bottom:10px}.trail-bulletin .calbox{min-height:0}.trail-bulletin .agenda{max-height:290px}.trail-bulletin .board-list li{grid-template-columns:48px 1fr}.trail-bulletin .board-list b{font-size:.87rem}.trail-bulletin .board-list .t{font-size:.7rem}.trail-bulletin .calstrip{font-size:.53rem;gap:6px}
- .junction-grid{grid-template-columns:1fr;gap:30px}.junction .hike-copy{padding-top:0}.junction .hike-copy>p{font-size:.9rem}.junction-hikers{display:none}.wood-signpost{width:100%;max-width:380px;margin:auto;padding-bottom:65px;gap:10px}.wood-sign{padding-top:18px;padding-bottom:18px;min-height:90px}.wood-sign>span{font-size:1.65rem}.wood-sign small{font-size:.6rem}.wood-sign::after{box-shadow:0 65px #d6c4a0}.ground-rock{bottom:50px;right:30%;width:55px;height:20px}.rock-b{bottom:35px;right:15%;width:40px;height:15px}
- .lookout-title{display:block}.lookout-title h2{margin-bottom:12px}.lookout-title .text-link{margin-bottom:20px}.lookout-title+p{font-size:.87rem}.expedition-notebook{padding:6px 16px;margin-top:25px;margin-bottom:45px}.expedition-notebook .season-tabs{gap:12px;justify-content:space-between}.expedition-notebook .season-tabs button{font-size:.65rem;white-space:nowrap;padding:15px 0}.expedition-notebook .season-panel{grid-template-columns:1fr;padding:24px 0;gap:18px}.expedition-notebook .season-panel>img{width:70%;max-width:220px}.expedition-notebook .season-panel h3{font-size:2rem}.expedition-notebook .season-panel p{font-size:.85rem}.expedition-notebook .stamp{font-size:.5rem}
- .field-title h3{font-size:1.65rem}.field-title .text-link{font-size:.7rem}.hike-photos{grid-template-columns:1fr 1fr;gap:18px}.hike-photos .trail-photo{padding:7px}.hike-photos .trail-photo:nth-child(2){margin-top:25px}.hike-photos .trail-photo:nth-child(3){grid-column:1/-1;width:80%;margin:5px auto 0}.hike-photos .slot figcaption{font-size:.6rem;padding-top:8px}.hike-photos .mat{aspect-ratio:.9}
- .map-intro{display:block}.map-intro h2{margin-bottom:20px}.map-intro p{font-size:.84rem}.trail-map-paper{padding:13px;transform:rotate(-1deg);margin-inline:-8px}.map-paper-top{font-size:.45rem;letter-spacing:.04em;padding-bottom:13px;gap:20px}.map-paper-top span:last-child{text-align:right;max-width:17ch}.illustrated-map{aspect-ratio:1/1.25;margin-top:0}
- .map-point{min-width:50px;padding:0 3px 7px}.map-point strong{font-size:.8rem;max-width:11ch;line-height:1.3;margin-top:8px;padding:1px 3px}.map-point small{display:none}.map-dot{width:29px;height:29px;font-size:.55rem;box-shadow:0 0 0 4px #f4efd8}.map-point:hover{transform:translate(-50%,-18px)}.map-compass{font-size:.5rem;right:4%;top:9%}.map-key{font-size:.48rem;gap:9px;padding-top:12px}.map-key>span:last-child{width:100%}
- .campfire{padding:65px 0 150px 26px;min-height:0}.camp-stars{padding-bottom:35px;font-size:1rem}.camp-grid{grid-template-columns:1fr;gap:25px}.camp-illustration{min-height:210px;max-width:300px;margin:auto;width:100%;order:2}.camp-illustration>img{transform:none}.campfire .hike-copy{order:1}.campfire .hike-copy>p{font-size:.9rem}.campfire h2{font-size:2.7rem}.camp-forest{height:155px}.camp-flame{bottom:8px;transform:scale(.75)}.camp-logs{bottom:0;transform:scale(.8) rotate(15deg)}.back-to-trailhead{font-size:.67rem;margin-top:20px}
- .trail-position{left:10px;bottom:10px;padding:8px 11px;font-size:.55rem;gap:8px}.trail-position .blaze{height:11px;width:4px}.hike-home .foot{padding-bottom:60px}.hike-home .foot .mini{font-size:.52rem}
+ .hike-header{padding:20px;gap:12px}.hike-brand{font-size:1.026rem;gap:8px}.hike-brand img{width:22px;height:27px}.hike-header nav{gap:0}.hike-header nav>a:first-child{display:none}.hike-header nav .map-shortcut{font-size:0.756rem;padding:9px 12px}.hike-header nav a span{margin-left:7px}
+ .trailhead{height:650px;min-height:620px;max-height:690px}.trail-landscape{background-size:auto 100%;background-position:50% bottom}.trailhead-copy{padding:110px 22px 0}.trailhead-copy .trail-kicker{font-size:0.518rem;letter-spacing:.11em}.trailhead-copy .trail-kicker span{padding:0 7px}.hike-logo{width:min(590px,96vw);margin:30px auto 20px}
+ .hike-home .trailhead h1{font-size:2.214rem;margin-bottom:18px;max-width:12ch;margin-inline:auto}.hike-home .trailhead-copy>p:not(.trail-kicker){font-size:0.907rem;max-width:32ch;line-height:1.8}.trailhead-note{right:23px;bottom:37px;font-size:0.594rem;max-width:16ch}.trailhead-map{left:23px;bottom:37px;max-width:19ch;font-size:0.616rem}.trailhead-map>span{font-size:2.16rem}
+ .hike-home section{scroll-margin-top:25px}.hike-stop{padding:45px 0 50px 26px}.hike-container{width:calc(100% - 50px)}.hike-home h2{font-size:2.7rem;line-height:1.16;margin-bottom:23px}.stop-heading{gap:12px;margin-bottom:24px}.mile-marker{width:30px;height:37px;font-size:0.648rem}.hike-home .trail-kicker{font-size:0.616rem}.hike-home p{font-size:0.972rem;line-height:1.8}
+ .clearing-grid{grid-template-columns:1fr;gap:28px}.hike-copy{max-width:none}.hike-copy .row{gap:12px 20px}.hike-home .btn{font-size:0.842rem;padding:13px 16px}.hike-home .text-link{font-size:0.832rem}.clearing-photo{width:88%;margin:14px auto 0}.trail-photo>img{aspect-ratio:1.2}.trail-photo figcaption{font-size:0.713rem}
+ .trail-bulletin{grid-template-columns:1fr;gap:22px;padding:22px 18px;margin-top:60px;border-width:5px;transform:rotate(-1deg)}.bulletin-title h3{font-size:2.15rem}.bulletin-title p{margin-bottom:10px}.trail-bulletin .calbox{min-height:0}.trail-bulletin .agenda{max-height:290px}.trail-bulletin .board-list li{grid-template-columns:48px 1fr}.trail-bulletin .board-list b{font-size:0.94rem}.trail-bulletin .board-list .t{font-size:0.756rem}.trail-bulletin .calstrip{font-size:0.572rem;gap:6px}
+ .junction-grid{grid-template-columns:1fr;gap:30px}.junction .hike-copy{padding-top:0}.junction .hike-copy>p{font-size:0.972rem}.junction-hikers{display:none}.wood-signpost{width:100%;max-width:380px;margin:auto;padding-bottom:65px;gap:10px}.wood-sign{padding-top:18px;padding-bottom:18px;min-height:90px}.wood-sign>span{font-size:1.782rem}.wood-sign small{font-size:0.648rem}.wood-sign::after{box-shadow:0 65px #d6c4a0}.ground-rock{bottom:50px;right:30%;width:55px;height:20px}.rock-b{bottom:35px;right:15%;width:40px;height:15px}
+ .lookout-title{display:block}.lookout-title h2{margin-bottom:12px}.lookout-title .text-link{margin-bottom:20px}.lookout-title+p{font-size:0.94rem}.expedition-notebook{padding:6px 16px;margin-top:25px;margin-bottom:45px}.expedition-notebook .season-tabs{gap:12px;justify-content:space-between}.expedition-notebook .season-tabs button{font-size:0.702rem;white-space:nowrap;padding:15px 0}.expedition-notebook .season-panel{grid-template-columns:1fr;padding:24px 0;gap:18px}.expedition-notebook .season-panel>img{width:70%;max-width:220px}.expedition-notebook .season-panel h3{font-size:2.16rem}.expedition-notebook .season-panel p{font-size:0.918rem}.expedition-notebook .stamp{font-size:0.54rem}
+ .field-title h3{font-size:1.782rem}.field-title .text-link{font-size:0.756rem}.hike-photos{grid-template-columns:1fr 1fr;gap:18px}.hike-photos .trail-photo{padding:7px}.hike-photos .trail-photo:nth-child(2){margin-top:25px}.hike-photos .trail-photo:nth-child(3){grid-column:1/-1;width:80%;margin:5px auto 0}.hike-photos .slot figcaption{font-size:0.648rem;padding-top:8px}.hike-photos .mat{aspect-ratio:.9}
+ .map-intro{display:block}.map-intro h2{margin-bottom:20px}.map-intro p{font-size:0.907rem}.trail-map-paper{padding:13px;transform:rotate(-1deg);margin-inline:-8px}.map-paper-top{font-size:0.486rem;letter-spacing:.04em;padding-bottom:13px;gap:20px}.map-paper-top span:last-child{text-align:right;max-width:17ch}.illustrated-map{aspect-ratio:1/1.25;margin-top:0}
+ .map-point{min-width:50px;padding:0 3px 7px}.map-point strong{font-size:0.864rem;max-width:11ch;line-height:1.3;margin-top:8px;padding:1px 3px}.map-point small{display:none}.map-dot{width:29px;height:29px;font-size:0.594rem;box-shadow:0 0 0 4px #f4efd8}.map-point:hover{transform:translate(-50%,-18px)}.map-compass{font-size:0.54rem;right:4%;top:9%}.map-key{font-size:0.518rem;gap:9px;padding-top:12px}.map-key>span:last-child{width:100%}
+ .campfire{padding:65px 0 150px 26px;min-height:0}.camp-stars{padding-bottom:35px;font-size:1.08rem}.camp-grid{grid-template-columns:1fr;gap:25px}.camp-illustration{min-height:210px;max-width:300px;margin:auto;width:100%;order:2}.camp-illustration>img{transform:none}.campfire .hike-copy{order:1}.campfire .hike-copy>p{font-size:0.972rem}.campfire h2{font-size:2.916rem}.camp-forest{height:155px}.camp-flame{bottom:8px;transform:scale(.75)}.camp-logs{bottom:0;transform:scale(.8) rotate(15deg)}.back-to-trailhead{font-size:0.724rem;margin-top:20px}
+.hike-home .foot{padding-bottom:60px}.hike-home .foot .mini{font-size:0.562rem}
  .strap{flex-wrap:wrap;gap:8px 18px}.trail-return{flex-basis:100%;text-align:left}
 }
 @media(prefers-reduced-motion:reduce){.trail-landscape{transform:none}.camp-flame i{animation:none}.hike-home a{transition:none}}
-@media print{.hike-header,.trail-position,.trail-landscape,.camp-stars,.camp-forest{display:none}.trailhead{height:auto;min-height:0}.trailhead-copy{padding:20px}.hike-stop{padding:25px 0}.hike-container{width:100%}.campfire{background:#fff;color:#000}.wood-sign{clip-path:none;transform:none;background:#fff;color:#000;border:1px solid #888}.trail-map-paper{transform:none;box-shadow:none}}
+@media print{.hike-header,.trail-landscape,.camp-stars,.camp-forest{display:none}.trailhead{height:auto;min-height:0}.trailhead-copy{padding:20px}.hike-stop{padding:25px 0}.hike-container{width:100%}.campfire{background:#fff;color:#000}.wood-sign{clip-path:none;transform:none;background:#fff;color:#000;border:1px solid #888}.trail-map-paper{transform:none;box-shadow:none}}
+
+.hike-home .trailhead-copy>p:not(.trail-kicker){color:#344b3c}
+.trail-landscape{transform:none}
+
+/* Night copy uses light ink against the uniform night sky. */
+html[data-trail-phase="night"] .hike-header,html[data-trail-phase="night"] .trailhead-copy{color:#fff5df}
+html[data-trail-phase="night"] .hike-home .trailhead-copy>p:not(.trail-kicker){color:#fff5df;text-shadow:0 1px 4px #263951}
+html[data-trail-phase="night"] .hike-logo,html[data-trail-phase="night"] .hike-brand img{filter:invert(1);mix-blend-mode:screen}
+html[data-trail-phase="night"] .hike-header nav .map-shortcut{border-color:#e5e8da80}
+
+/* Keep the open sky behind the copy and anchor the woodland to the viewport. */
+.hike-home .trailhead{height:100svh;min-height:0;max-height:none}
+.trail-landscape{background-position:center top;background-size:cover}
+.trail-landscape::after{content:"";position:absolute;inset:auto 0 0;height:25%;background:var(--trail-terrain,url('img/trail-summer-day-terrain.svg')) center bottom/cover no-repeat}
+@media(max-height:760px){.trailhead-copy{padding-top:85px}.hike-logo{width:min(685px,67svh,96vw);margin:18px auto 10px}.hike-home .trailhead h1{font-size:clamp(1.8rem,4.8svh,3rem)}.hike-home .trailhead-copy>p:not(.trail-kicker){line-height:1.6}}
+
+/* Larger introductory type, with compact spacing to keep it above the trees. */
+.hike-home .trailhead h1{font-size:clamp(3rem,5.3vw,4.85rem);line-height:1.12}
+.hike-home .trailhead-copy>p:not(.trail-kicker){font-size:1.32rem;line-height:1.65}
+.trailhead-copy{padding-top:100px;max-width:900px}
+.hike-logo{margin-top:16px;margin-bottom:8px}
+@media(max-width:600px){.trailhead-copy{padding-top:95px}.hike-home .trailhead h1{font-size:2.9rem}.hike-home .trailhead-copy>p:not(.trail-kicker){font-size:1.1rem}.hike-logo{margin:18px auto 10px}}
+@media(max-height:760px){.trailhead-copy{padding-top:80px}.hike-home .trailhead h1{font-size:clamp(2.5rem,6.3svh,4rem)}.hike-home .trailhead-copy>p:not(.trail-kicker){font-size:1.15rem;line-height:1.5}.hike-logo{margin:12px auto 6px}}
+
+/* Show the whole ridge: cover cropped the curved peaks into flat cutoffs. */
+.trail-landscape::after{height:35%;background-size:100% 100%}
+
+/* Nudge the introduction down without changing the landscape placement. */
+.trailhead-copy{padding-top:88px}
+@media(max-width:600px){.trailhead-copy{padding-top:75px}}
+@media(max-height:760px){.trailhead-copy{padding-top:60px}}
+
+.hike-home .trailhead-copy .trail-kicker{display:block;width:100%;max-width:none;margin:0 auto 20px;text-align:center}
+
+.hike-logo{margin-bottom:12px}
+
+/* Bring the signpost closer to its neighbors and center its introduction. */
+.clearing{padding-bottom:35px}
+.junction{padding-top:30px;padding-bottom:25px}
+.junction .hike-copy{align-self:center;padding-top:0}
+.wood-signpost{padding-bottom:45px}
+.lookout{padding-top:35px}
+@media(max-width:600px){.clearing{padding-bottom:25px}.junction{padding-top:25px;padding-bottom:20px}.lookout{padding-top:30px}.wood-signpost{padding-bottom:40px}}

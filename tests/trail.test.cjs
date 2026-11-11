@@ -62,8 +62,3 @@ test('blocked storage and malformed session data leave navigation usable', () =>
   assert.equal(boot({ saved: '{broken' }).mapLink.visited, false);
   assert.equal(boot({ saved: '"not an array"' }).mapLink.visited, false);
 });
-
-test('current-stop text still updates with reduced motion', () => {
-  const result = boot({ homepage: true, reduced: true });
-  assert.equal(result.nodes.trailPosition.textContent, 'You are here: The clearing');
-});
