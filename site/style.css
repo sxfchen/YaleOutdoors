@@ -335,7 +335,7 @@ legend{font:700 .8rem/1 var(--label);letter-spacing:.1em;text-transform:uppercas
 .trail-gear .card-front{background:#d7c6a7;border-color:#a4977e}
 .trail-gear .card-front img{width:155px;height:174px;bottom:12px;right:25px}
 .trail-join .card-front{background:#e3d9bb;border-color:#b9ad8c}
-.trail-join .card-front img{width:84%;height:170px;right:8px;bottom:12px}
+.trail-join .card-front img{width:76%;height:170px;right:10px;bottom:12px}
 .turn-mark{position:absolute;bottom:18px;left:24px;font:400 1.5rem var(--label)}
 .card-back{transform:rotateY(180deg);background:var(--pine);color:var(--sheet);display:flex;flex-direction:column;justify-content:center;padding-bottom:68px}
 .card-back p{font-size:1.1rem;line-height:1.5;margin:20px 0 0}
